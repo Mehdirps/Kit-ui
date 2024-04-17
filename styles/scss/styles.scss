@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'includes/variables';
+@import 'includes/mixins';
+@import 'includes/sidebar';
+@import 'includes/header';
+@import 'includes/buttons';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+root {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+
+  header {
+    background-color: $blue;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+    h1 {
+      color: white;
+    }
+  }
+
+  main {
+    padding: 20px;
+
+    hr {
+      margin: 20px 0;
+    }
+
+    .kit_container {
+      h2 {
+        margin: 25px 0;
+      }
+
+    }
+
+  }
+
+}
+
+.input_container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 10px 0;
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 2px 0;
+    border: 1px solid rgba(46, 64, 87, 0.2);
+    border-radius: 8px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .default_input::placeholder {
+    color: rgba(46, 64, 87, 0.5);
+  }
+
+  input + i {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    color: rgba(46, 64, 87);
+  }
+
+  .show_input + i {
+    color: #083D77;
+  }
+
+  .disabled_input {
+    background-color: #F1F1F1;
+    color: #CBCBCB;
+  }
+
+  .error_input {
+    border: 1px solid $red;
+
+  }
+
+  .error_input + i {
+    color: $red;
+  }
+
+  .error_input ~ p {
+    color: $red;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+}
+
+

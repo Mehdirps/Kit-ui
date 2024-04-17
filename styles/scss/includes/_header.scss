@@ -1,0 +1,52 @@
+.grp {
+/*  background-color: rgb(231, 231, 231);*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.content {
+  width: 28px;
+  height: 35px;
+  margin: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i ::before {
+  width: 19.5px;
+  height: 19.5px;
+}
+
+svg {
+  width: 19.5px;
+  height: 19.5px;
+}
+
+.imgicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+/* path{
+width: 19.5px;
+height: 19.5px;
+} */
+.m {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
